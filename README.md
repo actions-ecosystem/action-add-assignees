@@ -14,8 +14,8 @@ It would be more useful to use this with other GitHub Actions' outputs.
 
 |      NAME      |                                             DESCRIPTION                                             |   TYPE   | REQUIRED |          DEFAULT           |
 | -------------- | --------------------------------------------------------------------------------------------------- | -------- | -------- | -------------------------- |
-| `assignees`    | The assignees' name to be added. Must be separated with line breaks if there're multiple assignees. | `string` | `true`   | `N/A`                      |
 | `github_token` | A GitHub token.                                                                                     | `string` | `true`   | `N/A`                      |
+| `assignees`    | The assignees' name to be added. Must be separated with line breaks if there're multiple assignees. | `string` | `true`   | `N/A`                      |
 | `number`       | The number of the issue or pull request.                                                            | `number` | `false`  | `N/A`                      |
 | `repo`         | The owner and repository name. e.g.) `Codertocat/Hello-World`                                       | `string` | `false`  | `${{ github.repository }}` |
 
