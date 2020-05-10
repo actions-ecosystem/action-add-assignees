@@ -1,0 +1,20 @@
+name: Actions Ecosystem Action Add Assignees
+description: Add assignees to an issue or a pull request
+author: Actions Ecosystem
+inputs:
+  github_token:
+    description: A GitHub token.
+    required: true
+  assignees:
+    description: The assignees' name to be added. Must be separated with line breaks if there're multiple assignees.
+    required: true
+  repo:
+    description: The owner and repository name. e.g.) Codertocat/Hello-World
+    required: false
+    default: ${{ github.repository }}
+  number:
+    description: The number of the issue or pull request.
+    required: false
+runs:
+  using: node12
+  main: dist/index.js
