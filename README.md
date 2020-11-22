@@ -31,7 +31,7 @@ on:
       - reopened
 
 jobs:
-  add_labels:
+  add_assignees:
     runs-on: ubuntu-latest
     steps:
       - uses: actions-ecosystem/action-add-assignees@v1
