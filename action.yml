@@ -16,7 +16,7 @@ inputs:
     description: The number of the issue or pull request.
     required: false
 runs:
-  using: node16
+  using: node20
   main: dist/index.js
 branding:
   icon: users
